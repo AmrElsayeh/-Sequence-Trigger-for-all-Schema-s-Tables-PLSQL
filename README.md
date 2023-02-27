@@ -5,6 +5,8 @@ This PL/SQL project is designed to create new sequences and triggers for Oracle 
 ## Usage
 To use this project, simply run the "Create_Trigger_seq" procedure in your SQL developer console. Here's an example of how to use it:
 
+<pre>
+```
 -- First, create the procedure
 CREATE OR REPLACE PROCEDURE Create_Trigger_seq
 AS
@@ -15,6 +17,9 @@ END;
 BEGIN
    Create_Trigger_seq;
 END;
+```
+</pre>
+
 
 - The procedure will automatically drop any existing sequences and create new ones for each table with a primary key ending in "_ID". It will also create new triggers to ensure that the sequence values are used as the primary key values for new records.
 
